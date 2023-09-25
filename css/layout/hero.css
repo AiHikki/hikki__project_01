@@ -1,0 +1,199 @@
+@media screen and (min-width: 768px) {
+  .hero-page {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px), (min-width: 1168px) {
+  .hero-page {
+    margin-bottom: 80px;
+  }
+}
+
+.hero-page-wrapper {
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../../images/hero/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-page-wrapper {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../../images/hero/mobile-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-page-wrapper {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../../images/hero/tablet-bg.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero-page-wrapper {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../../images/hero/tablet-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .hero-page-wrapper {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../../images/hero/desktop-bg.jpg);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1168px),
+  screen and (min-resolution: 2dppx) and (min-width: 1168px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1168px) {
+  .hero-page-wrapper {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../../images/hero/desktop-bg@2x.jpg);
+  }
+}
+
+.page-title {
+  color: var(--secondary-color);
+  max-width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.hero-page-buttons {
+  display: flex;
+  gap: 14px;
+}
+.buy-button {
+  color: var(--secondary-color);
+  font-weight: 600;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+  width: 120px;
+  height: 41px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.buy-button:hover,
+.buy-button:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
+}
+.how-made-button {
+  background-color: transparent;
+  width: 159px;
+  height: 41px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.how-made-button:hover,
+.how-made-button:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.scroll-down-link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-size: 12px;
+  line-height: 1.17;
+  transition: color 250ms ease-in-out;
+}
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: var(--accent-color);
+}
+.scroll-down-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 12px;
+  fill: var(--accent-color);
+  transition: background-color 250ms ease-in-out;
+}
+.scroll-down-link:hover .scroll-down-icon-container,
+.scroll-down-link:focus .scroll-down-icon-container {
+  background-color: var(--accent-color);
+  fill: var(--secondary-color);
+}
+
+.scroll-down-icon {
+  transition: fill 250ms ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  .hero-page-buttons {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-page-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .page-title {
+    font-size: 28px;
+    line-height: 1.22;
+    max-width: 484px;
+  }
+  .hero-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .buy-button {
+    min-width: 144px;
+    height: 45px;
+  }
+  .how-made-button {
+    min-width: 183px;
+    height: 45px;
+  }
+  .scroll-down-link {
+    font-size: 14px;
+  }
+}

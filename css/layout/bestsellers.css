@@ -1,0 +1,143 @@
+@media screen and (max-width: 767px) {
+  .top-sellers-list-item:nth-child(n + 2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1167px) {
+  .top-sellers-list-item:nth-child(3) {
+    display: none;
+  }
+}
+
+.top-sellers-card-wrapper {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  color: #fafafa;
+  border-radius: 15px 15px 0px 0px;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 0.1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+  backdrop-filter: blur(7.5px);
+  padding-top: 187px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.top-sellers-list-item:hover .overlay {
+  opacity: 1;
+}
+
+.top-sellers-card-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #fff;
+}
+.top-sellers-card-title {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .overlay {
+    padding-top: 178px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+  .top-sellers-card-container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .top-sellers-list-item {
+    flex-basis: calc((100% - 2 * 16px) / 3);
+  }
+  .overlay {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* .top-sellers-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.top-sellers-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.top-sellers-card-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  padding: 178px 40px 40px 40px;
+  border-radius: 15px 15px 0px 0px;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 0.1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+  backdrop-filter: blur(7.5px);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  overflow: auto;
+}
+.top-sellers-list-item:hover .overlay {
+  opacity: 1;
+}
+
+.top-sellers-card-container {
+  border-radius: 0px 0px 15px 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: none;
+  background-color: #fff;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.top-sellers-card-title {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-transform: uppercase;
+  text-align: center;
+} */
