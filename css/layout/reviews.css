@@ -53,6 +53,12 @@
   border-radius: 100px;
   border: 1px solid #fd9222;
   background-color: transparent;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.leave-review-button:hover,
+.leave-review-button:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {

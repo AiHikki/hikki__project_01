@@ -47,16 +47,12 @@
             </li>
           </ul>
         </nav>
-        <button class="open-mobile-menu-btn" type="button">
-          <svg
-            class="open-mobile-menu-icon"
-            width="28"
-            height="28"
-            aria-label="open mobile menu icon"
-          >
-            <use href="./images/icons.svg#icon-hamburger"></use>
-          </svg>
-        </button>
+
+        <input class="visually-hidden" type="checkbox" id="open-mobile-menu" />
+        <label class="open-mobile-menu-btn" for="open-mobile-menu">
+          <span class="open-mobile-menu-icon"></span>
+        </label>
+
         <ul class="social-list list">
           <li class="social-list-item">
             <a class="social-list-link" href="">
@@ -95,6 +91,62 @@
             </a>
           </li>
         </ul>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link accent-color-link" href=""
+                >Home</a
+              >
+            </li>
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link" href="">How it’s made?</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-list-item">
+              <a href="" class="mobile-menu-social-list-link">
+                <svg
+                  class="mobile-menu-social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="facebook icon"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-list-item">
+              <a href="" class="mobile-menu-social-list-link">
+                <svg
+                  class="mobile-menu-social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="instagram icon"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-list-item">
+              <a href="" class="mobile-menu-social-list-link">
+                <svg
+                  class="mobile-menu-social-list-icon"
+                  width="24"
+                  height="24"
+                  aria-label="twitter icon"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -224,6 +276,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-1-mobile.png"
                   alt="milk chocolate"
+                  loading="lazy"
                 />
               </div>
               <button class="ingredients-card-button" type="button">
@@ -252,6 +305,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-2-mobile.png"
                   alt="a bottle of milk"
+                  loading="lazy"
                 />
               </div>
               <button
@@ -283,6 +337,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-3-mobile.png"
                   alt="nuts"
+                  loading="lazy"
                 />
               </div>
               <button class="ingredients-card-button" type="button">
@@ -311,6 +366,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-4-mobile.png"
                   alt="semi-sweet chocolate"
+                  loading="lazy"
                 />
               </div>
               <button
@@ -342,6 +398,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-5-mobile.png"
                   alt="cacao"
+                  loading="lazy"
                 />
               </div>
               <button class="ingredients-card-button" type="button">
@@ -370,6 +427,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-6-mobile.png"
                   alt="raspberry"
+                  loading="lazy"
                 />
               </div>
               <button
@@ -401,6 +459,7 @@
                   sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
                   src="./images/ingredients/img-7-mobile.png"
                   alt="coconut"
+                  loading="lazy"
                 />
               </div>
               <button class="ingredients-card-button" type="button">
@@ -413,8 +472,6 @@
                   <use href="./images/icons.svg#icon-card-arrow"></use>
                 </svg>
               </button>
-              <div class="milk-chocolate-back-img"></div>
-
               <h3 class="ingredients-card-title">coconut oil</h3>
             </li>
           </ul>
@@ -488,6 +545,7 @@
                   alt="a bar of orange dark chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -505,6 +563,7 @@
                   alt="a bar of apple&cranberry milk chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -522,6 +581,7 @@
                   alt="a bar of lime&sea salt dark chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -539,6 +599,7 @@
                   alt="a bar of pineapple dark chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -556,6 +617,7 @@
                   alt="a bar of classic milk chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -573,6 +635,7 @@
                   alt="a bar of honey milk chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -590,6 +653,7 @@
                   alt="a bar of roasted fruits dark chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -607,6 +671,7 @@
                   alt="a bar of classic white chocolate"
                   width="230"
                   height="201"
+                  loading="lazy"
                 />
               </div>
               <div class="products-card-desc">
@@ -641,6 +706,7 @@
                   sizes="(min-width: 1168px) 368px, (min-width: 768px) 344px, (max-width: 767px) 335px"
                   src="./images/bestsellers/img-1-mobile.jpg"
                   alt="chocolate with nuts"
+                  loading="lazy"
                 />
 
                 <p class="overlay">
@@ -665,6 +731,7 @@
                   sizes="(min-width: 1168px) 368px, (min-width: 768px) 344px"
                   src="./images/bestsellers/img-1-tablet.jpg"
                   alt="chocolate with fruits"
+                  loading="lazy"
                 />
 
                 <p class="overlay">
@@ -686,6 +753,7 @@
                   alt="dark chocolate"
                   width="368"
                   height="464"
+                  loading="lazy"
                 />
 
                 <p class="overlay">
@@ -720,6 +788,7 @@
                   alt="Victoria Dobrzhanska icon"
                   width="80"
                   height="80"
+                  loading="lazy"
                 />
               </div>
               <h3 class="review-card-name">Victoria Dobrzhanska</h3>
@@ -736,6 +805,7 @@
                   alt="Nazar Babenko icon"
                   width="80"
                   height="80"
+                  loading="lazy"
                 />
               </div>
               <h3 class="review-card-name">Nazar Babenko</h3>
@@ -753,6 +823,7 @@
                   alt="Olena Kampusch icon"
                   width="80"
                   height="80"
+                  loading="lazy"
                 />
               </div>
               <h3 class="review-card-name">Olena Kampusch</h3>
@@ -866,69 +937,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="mobile-menu">
-      <button class="close-mobile-menu-btn" type="button">
-        <svg
-          class="close-mobile-menu-icon"
-          width="28"
-          height="28"
-          aria-label="close mobile menu icon"
-        >
-          <use href="./images/icons.svg#icon-x-close"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu-list-item">
-          <a class="mobile-menu-list-link accent-color-link" href="">Home</a>
-        </li>
-        <li class="mobile-menu-list-item">
-          <a class="mobile-menu-list-link" href="">How it’s made?</a>
-        </li>
-        <li class="mobile-menu-list-item">
-          <a class="mobile-menu-list-link" href="">Chocolate is loved</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-menu-social-list">
-        <li class="mobile-menu-social-list-item">
-          <a href="" class="mobile-menu-social-list-link">
-            <svg
-              class="mobile-menu-social-list-icon"
-              width="24"
-              height="24"
-              aria-label="facebook icon"
-            >
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-list-item">
-          <a href="" class="mobile-menu-social-list-link">
-            <svg
-              class="mobile-menu-social-list-icon"
-              width="24"
-              height="24"
-              aria-label="instagram icon"
-            >
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-list-item">
-          <a href="" class="mobile-menu-social-list-link">
-            <svg
-              class="mobile-menu-social-list-icon"
-              width="24"
-              height="24"
-              aria-label="twitter icon"
-            >
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
 
     <!-- MODAL -->
     <div class="backdrop">
