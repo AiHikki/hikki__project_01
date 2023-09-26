@@ -50,6 +50,11 @@
     top: -6px;
   }
 
+  input:checked + .open-mobile-menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
   input:checked + .open-mobile-menu-btn > .open-mobile-menu-icon {
     background-color: transparent;
   }
