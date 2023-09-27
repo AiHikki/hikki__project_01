@@ -1,15 +1,3 @@
-@media screen and (min-width: 768px) {
-  .hero-page {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 767px), (min-width: 1168px) {
-  .hero-page {
-    margin-bottom: 80px;
-  }
-}
-
 .hero-page-wrapper {
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.6);
@@ -163,6 +151,8 @@
 
 .scroll-down-icon {
   transition: fill 250ms ease-in-out;
+  width: 16px;
+  height: 16px;
 }
 @media screen and (max-width: 767px) {
   .hero-page-buttons {
@@ -171,6 +161,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-page {
+    margin-bottom: 40px;
+  }
   .hero-page-wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -193,7 +186,23 @@
     min-width: 183px;
     height: 45px;
   }
+
   .scroll-down-link {
     font-size: 14px;
+  }
+  .scroll-down-icon-container {
+    width: 38px;
+    height: 38px;
+    margin-left: 14px;
+  }
+  .scroll-down-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px), (min-width: 1168px) {
+  .hero-page {
+    margin-bottom: 80px;
   }
 }
