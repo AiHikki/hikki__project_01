@@ -3,7 +3,7 @@ html {
 }
 body {
   background-color: #fafafa;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -43,7 +43,7 @@ textarea {
 }
 
 .section-title {
-  color: var(--primary-text-color);
+  color: var(--primary-color);
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
